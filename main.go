@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"got1/pkg/client"
+	"github.com/idib/got1/pkg/client"
 )
 
 func main() {

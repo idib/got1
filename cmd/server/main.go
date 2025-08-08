@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 
-	"got1/internal/server"
+	"github.com/idib/got1/internal/server"
 )
 
 func main() {
