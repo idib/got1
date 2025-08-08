@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/idib/got1/pkg/client"
+	got2_client "github.com/idib/got2/pkg/client"
 )
 
 func main() {
@@ -34,5 +35,10 @@ func main() {
 		}
 
 		time.Sleep(1 * time.Second)
+	}
+
+	_, err = got2_client.NewClient("http://localhost:8080").Ping()
+	if err != nil {
+		return
 	}
 }
